@@ -1,0 +1,17 @@
+h1{
+    font-size: 1rem;
+    color:brown;
+}
+
+body{
+    margin:5px;
+    padding:5px;
+}
+
+.bodyIndex {
+    background-color: rgb(207, 230, 230);
+}
+
+.contenido1 {
+    background-color: rgb(207, 230, 230);
+}
