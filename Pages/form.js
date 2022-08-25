@@ -6,7 +6,7 @@ campoDeCorreo.onchange = () => {
     correo = campoDeCorreo.value;
 }
 campoContraseña.onchange = () => {
-    password = campoPass.value;
+    password = campoContraseña.value;
 }
 
 formulario.addEventListener("submit",validarForm);

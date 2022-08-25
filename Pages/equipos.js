@@ -7,7 +7,22 @@ class Equipo {
     }
 }
 
-const equipos = [];
+const equipos=[
+    {
+        nombre:"Las Leñitas FC",
+        partidosJugados: 4,
+        puntos:5,
+        ciudad:"La Granja"
+    },
+    {
+        nombre:"Caroya Unido",
+        partidosJugados:4,
+        puntos:3,
+        ciudad:"Colonia Caroya"
+    },     
+];
+
+dibujarTabla();
 
 let formulario1 = document.getElementById("agregarForm");
 let agregarUnEquipo = document.getElementById("agregarEq");
@@ -42,7 +57,15 @@ botonDeAgregar.onclick = () => {
         console.log("Has agregado un equipo");
         dibujarTabla();
         console.table(equipos);
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Equipo Agregado con Éxito',
+            showConfirmButton: false,
+            timer: 1500
+          })
     }
+    localStorage.setItem("equipos",JSON.stringify(equipos));
 }
 
 function dibujarTabla() {
