@@ -68,6 +68,11 @@ botonDeAgregar.onclick = () => {
     localStorage.setItem("equipos",JSON.stringify(equipos));
 }
 
+let traidoDelStorage=localStorage.getItem("equipos");
+const jsonAObjeto=JSON.parse(traidoDelStorage);
+console.log(jsonAObjeto);
+
+
 function dibujarTabla() {
     let tablaDePosicion = document.getElementById("equipoItem");
     tablaDePosicion.innerHTML = "";
