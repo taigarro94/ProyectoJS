@@ -63,14 +63,13 @@ botonDeAgregar.onclick = () => {
             title: 'Equipo Agregado con Éxito',
             showConfirmButton: false,
             timer: 1500
-          })
+          }) //Librería
     }
     localStorage.setItem("equipos",JSON.stringify(equipos));
 }
 
 let traidoDelStorage=localStorage.getItem("equipos");
 const jsonAObjeto=JSON.parse(traidoDelStorage);
-console.log(jsonAObjeto);
 
 
 function dibujarTabla() {
